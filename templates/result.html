@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID-19 Fake News App</title>
+	<meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+<style type="text/css">
+	.main-section{
+	margin:0 auto;
+	padding: 20px;
+	margin-top: 100px;
+	background-color: #fff;
+	box-shadow: 0px 0px 20px #c1c1c1;
+}
+#custom_card{
+	background-color:grey;
+	color:#fff;
+	padding:10px;
+}
+#custom_card2{
+	background-color:#383838;
+	color:#fff;
+	padding:10px;
+}
+</style>
+
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/css/mdb.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="/">COVID-19 Fake News App</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+
+      </li>
+
+
+    </ul>
+
+  </div>
+</nav>
+<br/>
+<br/>
+
+<div class="jumbotron" style="background:#673AB7;color:#fff">
+    <div class="container">
+      <h2 class="display-3">Displaying COVID-19 Fake News Detection in Flask </h2>
+      <p>Using CNN model on optimal industrial sample size</p>
+      <p><a class="btn btn-success waves-effect btn-lg" href="/" role="button">Refresh &raquo;</a></p>
+    </div>
+  </div>
+<br/>
+<br/>
+
+
+<hr/>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+          <div class="card mb-10 shadow-sm" id="custom_card">
+          	<h4>Original Data</h4>
+          	<p>{{ rawtext }}</p>
+
+		</div>
+	</div>
+	<div class="col-md-6">
+          <div class="card mb-10 shadow-sm" id="custom_card2">
+          	<h4>Result of Data</h4>
+			<p>{{ result|markdown }}</p>
+
+		</div>
+	</div>
+</div>
+
+
+</div>
+
+
+
+</body>
+</html>
+
+</body>
+</html>
