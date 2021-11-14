@@ -5,4 +5,4 @@ A CNN-based fake news classifier embedded in this app is from the research below
 
 https://user-images.githubusercontent.com/28020765/139730126-d647262e-a21d-4f4a-9457-a42031f4b505.mp4
 
-The app is deployed on Heroka: https://fake-news-detector-cnn.herokuapp.com/. Since the model built in tensorflow, it may spend long time when runing without GPU setting on Heroka application platform.  
+### The app is deployed on Heroka: https://fake-news-detector-cnn.herokuapp.com/. Since the model built in tensorflow, it may spend long time when runing without GPU setting on Heroka application platform.  
